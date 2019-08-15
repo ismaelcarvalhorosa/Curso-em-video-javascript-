@@ -1,0 +1,11 @@
+.imagem{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%; 
+    transition: border-radius 2s, width 2s, height 2s;
+}
+.imagem:hover{
+    width: 500px;
+    height: 400px;
+    border-radius: 5%; 
+}

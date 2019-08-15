@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Aula 10</title>
+    <style>
+        div#area{
+            line-height: 200px;
+            background: chartreuse;
+            color:black;
+            width: 200px;
+            height: 200px;
+            text-align: center;
+        }
+        teste{
+            background: white;
+            border-radius: 10px;
+            padding: 100px;
+            width: 500px;
+            margin: auto;
+            box-shadow: 5px 5px 10px black;
+        }
+    </style>
+</head>
+<body>
+    <div id="area">
+        E a ai ! de boa?
+    </div>
+    <script>
+        var a = window.document.getElementById('area')
+        a.addEventListener('click', clicar)
+        a.addEventListener('mouseenter', entrar)
+        a.addEventListener('mouseout', sair)
+
+        function clicar(){
+            /*window.alert('Opa !')*/
+            var a = window.document.getElementById('area')
+            a.style.backgroundColor = 'red';
+            a.style.getElementById('teste')
+        }
+        function entrar(){ 
+            a.style.backgroundColor = 'green';
+        }
+        function sair(){
+            var a = window.document.getElementById('area')
+            a.style.backgroundColor = 'chartreuse';
+        }
+    </script>
+</body>
+</html>
